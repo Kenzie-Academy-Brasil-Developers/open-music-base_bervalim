@@ -1,18 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html class="dark-mode" lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
     <link rel="stylesheet" href="./src/styles/globalStyles.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
     <title>Open Music</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <script src="./src/scripts/theme.js"></script>
-    <script src="./src/scripts/productsData.js"></script>
-    <script src="./src/scripts/index.js"></script>
+    <header class="header__container">
+      <h1>open music</h1>
+      <button class="header__button">
+        <img src="./src/assets/img/moon.svg" />
+      </button>
+    </header>
+    <main>
+      <section class="genre__container">
+        <div class="genre__text">
+          <h2>Gênero Musical</h2>
+        </div>
+        <ul class="genre__filter">
+          <li class="genre__list">
+            <button class="genre__button">X</button>
+          </li>
+          <li>
+            <button>X</button>
+          </li>
+        </ul>
+        <div class="price__container">
+          <div class="price__range">
+            <h2>Definir Preço</h2>
+            <p>Até R$<span id="priceToSearch">0</span></p>
+            <input
+              type="range"
+              id="range__input"
+              min="0"
+              max="100"
+              step="10"
+              value="0"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="card_container">
+        <h2>Albuns Encontrados</h2>
+        <ul class="card__list">
+          <li class="card__item">
+            <img src="./src/assets/img/1.jpg" />
+            <p>Scalene 2017</p>
+            <h2 class="card__name">Magnetite</h2>
+            <span class="card__information">
+              <p class="card__price">R$ 70.00</p>
+              <button class="card__button">Comprar</button>
+            </span>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!-- <script src="./src/scripts/theme.js"></script>
+    <script src="./src/scripts/productsData.js"></script> -->
+    <script type="module" src="./src/scripts/index.js"></script>
   </body>
 </html>
