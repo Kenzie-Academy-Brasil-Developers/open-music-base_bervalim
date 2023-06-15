@@ -1,40 +1,50 @@
 import { renderCardAlbuns } from "./index.js";
 
 export const filterByTypeSong = (categoryArray, productArray) => {
-  const inputRangePrice = document.querySelector("#range__input");
   const genreButtons = document.querySelectorAll(".genre__button");
+  const inputRangePrice = document.querySelector("#range__input");
   genreButtons.forEach((genreButton) => {
     genreButton.addEventListener("click", () => {
-      console.log(inputRangePrice.value);
       const categoryIndex = categoryArray.findIndex(
         (category) => category === genreButton.innerText
       );
-
-      const filteredArray = productArray.filter(
-        (product) =>
-          categoryIndex === product.category &&
-          inputRangePrice.value >= product.price
-      );
-
-      renderCardAlbuns(filteredArray);
-
-      if (categoryIndex === 0) {
-        renderCardAlbuns(productArray);
+      if (categoryIndex !== 0) {
+        const filteredArray = productArray.filter(
+          (product) => categoryIndex === product.category
+        );
+        filterByRangePriceAlbum(filteredArray, categoryIndex);
+      } else {
+        filterByRangePriceAlbum(productArray, categoryIndex);
       }
+
+      // if (categoryIndex === 0) {
+      //   renderCardAlbuns(productArray);
+      //   filterByRangePriceAlbum(productArray);
+      // }
     });
   });
 };
 
-export const filterByRangePriceAlbum = (productArray) => {
+export const filterByRangePriceAlbum = (productArray, category) => {
   const inputRangePrice = document.querySelector("#range__input");
-
+  const spanPriceToSearch = document.querySelector("#priceToSearch");
+  let filteredArray = [];
   inputRangePrice.addEventListener("input", () => {
-    const spanPriceToSearch = document.querySelector("#priceToSearch");
-    spanPriceToSearch.innerText = inputRangePrice.value;
+    spanPriceToSearch.innerText = Number(inputRangePrice.value).toFixed(2);
 
-    const filteredProductArray = productArray.filter((product) => {
-      return product.price <= inputRangePrice.value && product.category;
-    });
-    renderCardAlbuns(filteredProductArray);
+    if (category !== 0) {
+      filteredArray = productArray.filter(
+        (product) => product.price <= inputRangePrice.value
+      );
+    } else {
+      filteredArray = productArray.filter(
+        (product) => product.price <= inputRangePrice.value
+      );
+    }
+    renderCardAlbuns(filteredArray);
   });
+  filteredArray = productArray.filter(
+    (product) => product.price <= inputRangePrice.value
+  );
+  renderCardAlbuns(filteredArray);
 };

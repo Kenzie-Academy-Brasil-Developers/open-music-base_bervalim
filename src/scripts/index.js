@@ -81,4 +81,4 @@ renderFilterButtons(categories);
 
 filterByTypeSong(categories, products);
 
-filterByRangePriceAlbum(products);
+filterByRangePriceAlbum(products, 0);
