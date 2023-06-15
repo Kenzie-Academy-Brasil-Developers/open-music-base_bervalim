@@ -1,7 +1,6 @@
 import { products, categories } from "./productsData.js";
 import { filterByTypeSong, filterByRangePriceAlbum } from "./filter.js";
-
-/* Desenvolva sua lógica aqui ... */
+import { renderDarkMode } from "./theme.js";
 
 export const renderCardAlbuns = (array) => {
   const cardList = document.querySelector(".card__list");
@@ -82,3 +81,5 @@ renderFilterButtons(categories);
 filterByTypeSong(categories, products);
 
 filterByRangePriceAlbum(products, 0);
+
+renderDarkMode();

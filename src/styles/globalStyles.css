@@ -7,7 +7,7 @@
 }
 
 :root {
-  --color-brand-1:#9747ff;
+  --color-brand-1: #9747ff;
   --color-grey-0: #15171a;
   --color-grey-1: #212529;
   --color-grey-2: #2b2f33;
@@ -30,7 +30,8 @@
   --radius-1: 0.25rem;
   --container: 45rem;
 }
-
+.dark__mode:root {
+}
 body {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -43,4 +44,8 @@ body {
   max-width: 100%;
   padding: 0 1rem;
   margin: 0 auto;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }

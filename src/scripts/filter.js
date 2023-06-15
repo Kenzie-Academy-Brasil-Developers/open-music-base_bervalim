@@ -2,7 +2,6 @@ import { renderCardAlbuns } from "./index.js";
 
 export const filterByTypeSong = (categoryArray, productArray) => {
   const genreButtons = document.querySelectorAll(".genre__button");
-  const inputRangePrice = document.querySelector("#range__input");
   genreButtons.forEach((genreButton) => {
     genreButton.addEventListener("click", () => {
       const categoryIndex = categoryArray.findIndex(
@@ -16,11 +15,6 @@ export const filterByTypeSong = (categoryArray, productArray) => {
       } else {
         filterByRangePriceAlbum(productArray, categoryIndex);
       }
-
-      // if (categoryIndex === 0) {
-      //   renderCardAlbuns(productArray);
-      //   filterByRangePriceAlbum(productArray);
-      // }
     });
   });
 };
