@@ -14,5 +14,6 @@
   font-size: var(--font-2);
   border: none;
   background-color: transparent;
-  opacity: 1;
+  cursor: pointer;
+  width: 20px;
 }

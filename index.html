@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./src/styles/globalStyles.css" />
     <link rel="stylesheet" href="./src/styles/header.css" />
     <link rel="stylesheet" href="./src/styles/genreContainer.css" />
+    <link rel="stylesheet" href="./src/styles/inputRange.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -38,16 +39,16 @@
           <div class="price__container">
             <div class="price__range">
               <h2>Definir Preço</h2>
-              <p>Até R$<span id="priceToSearch">118,50</span></p>
-              <input
-                type="range"
-                id="range__input"
-                min="0"
-                max="100"
-                step="0.1"
-                value="100"
-              />
+              <p><span id="priceToSearch">Até R$ 118,50</span></p>
             </div>
+            <input
+              type="range"
+              id="range__input"
+              min="0"
+              max="100"
+              step="0.1"
+              value="100"
+            />
           </div>
         </section>
         <section class="card_container">
