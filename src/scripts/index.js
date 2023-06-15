@@ -1,5 +1,5 @@
 import { products, categories } from "./productsData.js";
-import { filterByTypeSong } from "./filter.js";
+import { filterByTypeSong, filterByRangePriceAlbum } from "./filter.js";
 
 /* Desenvolva sua lógica aqui ... */
 
@@ -74,8 +74,11 @@ function createFilterButton(genreButtons) {
 
   return listItemGenreButton;
 }
+
 renderCardAlbuns(products);
 
 renderFilterButtons(categories);
 
 filterByTypeSong(categories, products);
+
+filterByRangePriceAlbum(products);
