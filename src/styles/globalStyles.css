@@ -31,6 +31,28 @@
   --container: 45rem;
 }
 .dark__mode:root {
+  --color-brand-1: #9747ff;
+  --color-grey-0: #fdfeff;
+  --color-grey-1: #fdfeff;
+  --color-grey-2: #f8f9fa;
+  --color-grey-3: #f1f3f5;
+  --color-grey-4: #dee2e6;
+  --color-grey-5: #ced4da;
+  --color-grey-6: #adb5bd;
+  --color-grey-7: #868e96;
+  --color-grey-8: #2b2f33;
+  --color-grey-9: #212529;
+
+  --color-disable-fixed: #212529;
+  --color-actived-fixed: #2b2f33;
+  --color-white-fixed: #ffffff;
+
+  --font-1: 1.75rem;
+  --font-2: 1rem;
+  --font-3: 0.875rem;
+
+  --radius-1: 0.25rem;
+  --container: 45rem;
 }
 body {
   font-family: "Inter", sans-serif;
@@ -42,10 +64,14 @@ body {
 .container {
   width: var(--container);
   max-width: 100%;
-  padding: 0 1rem;
   margin: 0 auto;
+  padding: 3.4rem 1rem;
 }
 
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.card__item > img {
+  width: 400px;
 }

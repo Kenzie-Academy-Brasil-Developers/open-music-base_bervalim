@@ -1,0 +1,18 @@
+.header__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__container > h1 {
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--color-grey-1);
+}
+
+.header__button > span {
+  font-size: var(--font-2);
+  border: none;
+  background-color: transparent;
+  opacity: 1;
+}
