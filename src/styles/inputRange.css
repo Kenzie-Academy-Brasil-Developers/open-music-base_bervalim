@@ -31,4 +31,11 @@
 }
 
 #range__input::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 5px solid blueviolet;
+  background-color: var(--color-white-fixed);
+  cursor: pointer;
 }

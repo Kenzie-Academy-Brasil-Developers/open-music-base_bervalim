@@ -15,7 +15,7 @@ function createCardAlbuns(albumSongs) {
   const cardAlbumListItem = document.createElement("li");
   const cardAlbumImage = document.createElement("img");
   const paragraphBandName = document.createElement("p");
-  // const spanBandName = document.createElement("span");
+  const spanBandName = document.createElement("span");
   const albumTitle = document.createElement("h2");
   const spanCardPrice = document.createElement("span");
   const paragraphCardPrice = document.createElement("p");
@@ -26,14 +26,17 @@ function createCardAlbuns(albumSongs) {
   cardAlbumImage.src = albumSongs.img;
   cardAlbumImage.alt = albumSongs.title;
 
-  paragraphBandName.innerText = `${albumSongs.band}  ${albumSongs.year}`;
+  paragraphBandName.innerText =
+    albumSongs.band +
+    "                                          " +
+    albumSongs.year;
 
   albumTitle.classList.add("card__name");
   albumTitle.innerText = albumSongs.title;
 
   spanCardPrice.classList.add("card__information");
   paragraphCardPrice.classList.add("card__price");
-  paragraphCardPrice.innerText = albumSongs.price;
+  paragraphCardPrice.innerText = `R$ ${albumSongs.price}`;
 
   buttonCardPrice.classList.add("card__button");
   buttonCardPrice.innerText = "Comprar";

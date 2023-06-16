@@ -19,10 +19,11 @@
   --color-grey-8: #f8f9fa;
   --color-grey-9: #fdfeff;
 
-  --color-disable-fixed: #212529;
+  --color-disable-fixed: #2b2f33;
   --color-actived-fixed: #2b2f33;
   --color-white-fixed: #ffffff;
-
+  --border-color-button: #f1f3f5;
+  --color-text-button: #2b2f33;
   --font-1: 1.75rem;
   --font-2: 1rem;
   --font-3: 0.875rem;
@@ -43,10 +44,11 @@
   --color-grey-8: #2b2f33;
   --color-grey-9: #212529;
 
-  --color-disable-fixed: #212529;
+  --color-disable-fixed: #868e96;
   --color-actived-fixed: #2b2f33;
   --color-white-fixed: #ffffff;
-
+  --border-color-button: #343a40;
+  --color-text-button: #ced4da;
   --font-1: 1.75rem;
   --font-2: 1rem;
   --font-3: 0.875rem;
@@ -73,5 +75,5 @@ body {
 }
 
 .card__item > img {
-  width: 400px;
+  width: 300px;
 }
