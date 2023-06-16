@@ -29,7 +29,8 @@
 
 .card__item > img {
   width: 100%;
-  border-radius: 15px 15px 0px 0px;
+  height: 100%;
+  border-radius: 3px 3px 0px 0px;
 }
 
 .card__item > p {
