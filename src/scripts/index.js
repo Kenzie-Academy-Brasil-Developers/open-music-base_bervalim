@@ -25,6 +25,7 @@ function createCardAlbuns(albumSongs) {
 
   cardAlbumImage.src = albumSongs.img;
   cardAlbumImage.alt = albumSongs.title;
+  cardAlbumImage.classList.add("card__image");
 
   paragraphBandName.innerText =
     albumSongs.band +
