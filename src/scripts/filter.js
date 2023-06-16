@@ -24,7 +24,9 @@ export const filterByRangePriceAlbum = (productArray, category) => {
   const spanPriceToSearch = document.querySelector("#priceToSearch");
   let filteredArray = [];
   inputRangePrice.addEventListener("input", () => {
-    spanPriceToSearch.innerText = Number(inputRangePrice.value).toFixed(2);
+    spanPriceToSearch.innerText = `Até R$${Number(
+      inputRangePrice.value
+    ).toFixed(2)}`;
 
     if (category !== 0) {
       filteredArray = productArray.filter(
