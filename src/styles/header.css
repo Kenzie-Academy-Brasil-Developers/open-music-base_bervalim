@@ -9,11 +9,17 @@
   font-weight: 600;
   color: var(--color-grey-1);
 }
-
+.header__button {
+  background-color: var(--dark-mode-bk-color);
+  border: none;
+  color: var(--dark-mode-color);
+  text-align: center;
+}
 .header__button > span {
   font-size: var(--font-2);
   border: none;
-  background-color: transparent;
   cursor: pointer;
-  width: 20px;
+  width: 34px;
+  padding: 5px 8px;
+  height: 28px;
 }

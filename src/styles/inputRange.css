@@ -11,13 +11,13 @@
 .price__range > h2 {
   font-weight: 600;
   font-size: var(--font-2);
-  color: var(--color-grey-1);
+  color: var(--gender--title);
 }
 
 #priceToSearch {
   font-weight: 500;
   font-size: var(--font-2);
-  color: var(--color-grey-2);
+  color: var(--gender--title);
 }
 
 #range__input {

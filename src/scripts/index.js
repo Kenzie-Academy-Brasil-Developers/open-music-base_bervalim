@@ -37,7 +37,7 @@ function createCardAlbuns(albumSongs) {
 
   spanCardPrice.classList.add("card__information");
   paragraphCardPrice.classList.add("card__price");
-  paragraphCardPrice.innerText = `R$ ${albumSongs.price}`;
+  paragraphCardPrice.innerText = `R$ ${albumSongs.price.toFixed(2)}`;
 
   buttonCardPrice.classList.add("card__button");
   buttonCardPrice.innerText = "Comprar";

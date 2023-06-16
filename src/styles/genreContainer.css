@@ -6,7 +6,7 @@
 .genre__text > h2 {
   font-weight: 600;
   font-size: var(--font-2);
-  color: var(--color-grey-1);
+  color: var(--gender--title);
 }
 
 .genre__filter {
@@ -23,21 +23,22 @@
   justify-content: center;
   align-items: center;
   border-radius: var(--radius-1);
-  border: 1px solid var(--color-grey-8);
-  background-color: var(--color-grey-8);
-  color: var(--color-grey-2);
+  border: 1px solid var(--genre-button-color);
+  background-color: var(---genre-button-color);
+  color: var(--gender--title);
   font-size: var(--font-3);
   font-weight: 500;
   cursor: pointer;
 }
 
 .genre__button:focus {
-  background-color: var(--color-grey-1);
-  color: var(--color-grey-8);
-  border: 1px solid var(--color-grey-1);
+  background-color: var(--genre-button-focus);
+  color: var(--color-text-focus);
+  border: 1px solid var(--border-button-focus);
 }
 
 .genre__button:hover {
-  background-color: var(--color-grey-1);
-  color: var(--color-grey-8);
+  background-color: var(--genre-button-focus);
+  color: var(--color-text-focus);
+  border: 1px solid var(--border-button-focus);
 }

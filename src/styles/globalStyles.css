@@ -18,7 +18,7 @@
   --color-grey-7: #f1f3f5;
   --color-grey-8: #f8f9fa;
   --color-grey-9: #fdfeff;
-
+  --genre-button-color: #f8f9fa;
   --color-disable-fixed: #2b2f33;
   --color-actived-fixed: #2b2f33;
   --color-white-fixed: #ffffff;
@@ -27,9 +27,15 @@
   --font-1: 1.75rem;
   --font-2: 1rem;
   --font-3: 0.875rem;
-
+  --hover--cards: #ced4da;
+  --gender--title: #212529;
   --radius-1: 0.25rem;
   --container: 45rem;
+  --genre-button-focus: #212529;
+  --color-text-focus: #fdfeff;
+  --border-button-focus: #fdfeff;
+  --dark-mode-bk-color: #f8f9fa;
+  --dark-mode-color: #2b2f33;
 }
 .dark__mode:root {
   --color-brand-1: #9747ff;
@@ -42,8 +48,8 @@
   --color-grey-6: #adb5bd;
   --color-grey-7: #868e96;
   --color-grey-8: #2b2f33;
-  --color-grey-9: #212529;
-
+  --color-grey-9: #15171a;
+  --gender--title: #adb5bd;
   --color-disable-fixed: #868e96;
   --color-actived-fixed: #2b2f33;
   --color-white-fixed: #ffffff;
@@ -52,9 +58,15 @@
   --font-1: 1.75rem;
   --font-2: 1rem;
   --font-3: 0.875rem;
-
+  --hover--cards: #343a40;
   --radius-1: 0.25rem;
   --container: 45rem;
+  --genre-button-color: #212529;
+  --genre-button-focus: #2b2f33;
+  --color-text-focus: #fdfeff;
+  --border-button-focus: #fdfeff;
+  --dark-mode-bk-color: #212529;
+  --dark-mode-color: #adb5bd;
 }
 body {
   font-family: "Inter", sans-serif;
